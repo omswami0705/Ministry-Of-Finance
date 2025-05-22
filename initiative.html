@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Finance - Enhanced</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesInitiative.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Back to Top Button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease-in-out;
+        }
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            // Show/Hide Back to Top Button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    $('#backToTop').fadeIn();
+                } else {
+                    $('#backToTop').fadeOut();
+                }
+            });
+
+            // Smooth Scroll to Top
+            $("#backToTop").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Government of India Logo">
+            <span>Ministry of Finance</span>
+        </div>
+        <div class="nav-links">
+            <a href="index2.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Initiatives <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://www.gst.gov.in/">GST</a>
+                    <a href="https://csc.gov.in/digitalIndia">Digital India</a>
+                    <a href="https://www.pmjdy.gov.in/">PMJDY</a>
+                </div>
+            </div>
+            <a href="budget.html">Budget</a>
+            <a href="services.html">Citizen Services</a>
+            <a href="resources.html"> Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <marquee>Breaking News: Government announces new tax policies! | Budget 2025 Highlights: Major economic reforms!</marquee>
+    </div>
+
+    <!-- Initiatives Section -->
+    <section id="initiatives">
+        <h2>Key Initiatives</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/GST.jpg" alt="GST" loading="lazy">
+                <h3>Goods and Services Tax (GST)</h3>
+                <p>A unified tax system replacing multiple indirect taxes.</p>
+                <a href="https://www.gst.gov.in/" target="_blank" class="btn-primary">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/Digital_India_logo.svg.png" alt="Digital India" loading="lazy">
+                <h3>Digital India</h3>
+                <p>A vision to transform India into a digitally empowered economy.</p>
+                <a href="https://www.digitalindia.gov.in/" target="_blank" class="btn-primary">Learn More</a>
+            </div>
+            <!-- PMJDY -->
+        <div class="card">
+            <img src="images/Pradhan_Mantri_Jan_Dhan_Yojana_logo.png" alt="PMJDY" loading="lazy">
+            <h3>Pradhan Mantri Jan Dhan Yojana (PMJDY)</h3>
+            <p>A financial inclusion scheme providing banking services to all.</p>
+            <p>With zero-balance accounts, debit cards, and insurance benefits, PMJDY has brought millions into the banking system.</p>
+            <a href="https://pmjdy.gov.in/" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- Make in India -->
+        <div class="card">
+            <img src="images/Make_In_India.png" alt="Make in India" loading="lazy">
+            <h3>Make in India</h3>
+            <p>Encouraging global and domestic companies to manufacture in India.</p>
+            <p>With reforms in labor laws, ease of doing business, and FDI policies, this initiative aims to boost employment and economic growth.</p>
+            <a href="https://www.makeinindia.com/" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- Startup India -->
+        <div class="card">
+            <img src="images/startupindia.webp" alt="Startup India" loading="lazy">
+            <h3>Startup India</h3>
+            <p>Promoting entrepreneurship and innovation in India.</p>
+            <p>Startups receive tax exemptions, funding support, and regulatory assistance, fostering a culture of business innovation.</p>
+            <a href="https://www.startupindia.gov.in/" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- Atmanirbhar Bharat -->
+        <div class="card">
+            <img src="images/atmanirbhar-bharat.jpg" alt="Atmanirbhar Bharat" loading="lazy">
+            <h3>Atmanirbhar Bharat</h3>
+            <p>Self-reliance in manufacturing, technology, and defense.</p>
+            <p>Encourages indigenous production in key sectors like defense, energy, and electronics, reducing import dependence.</p>
+            <a href="https://cmsadmin.amritmahotsav.nic.in/aatmanirbhar-bharat.htm" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- Mudra Yojana -->
+        <div class="card">
+            <img src="images/mudra.png" alt="Mudra Yojana" loading="lazy">
+
+            <h3>Pradhan Mantri Mudra Yojana (PMMY)</h3>
+            <p>Providing loans to small businesses and entrepreneurs.</p>
+            <p>Offers microfinance up to ₹10 lakh under three categories (Shishu, Kishor, Tarun) to promote self-employment and small-scale industries.</p>
+            <a href="https://www.mudra.org.in/" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- FDI Policy Reforms -->
+        <div class="card">
+            <img src="images/fdi.png" alt="FDI Policy Reforms" loading="lazy">
+            <h3>FDI Policy Reforms</h3>
+            <p>Opening key sectors to foreign direct investment.</p>
+            <p>FDI limits increased in defense, insurance, and retail sectors, boosting global investor confidence and economic growth.</p>
+            <a href="https://www.indiafilings.com/learn/foreign-direct-investment-policy-in-india/" target="_blank" class="btn-primary">Learn More</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <button class="accordion">What is GST?</button>
+        <div class="panel"><p>GST is a single tax on the supply of goods and services.</p></div>
+        <button class="accordion">What is Digital India?</button>
+        <div class="panel"><p>Digital India is a campaign to transform India into a digitally empowered society.</p></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h4>Ministry of Finance</h4>
+                <ul>
+                    <li><a href="index2.html">About Us</a></li>
+                    <li><a href="budget.html">Budget</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: support@finmin.gov.in</p>
+                <p>Helpline: 1800-123-456</p>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Ministry of Finance, Government of India. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+</body>
+</html>

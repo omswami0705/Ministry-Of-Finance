@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ministry of Finance, India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="index2.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Govt Logo" width="40">
+                Ministry of Finance, India
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-secondary">
+                    <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="initiative.html">Initiatives</a></li>
+                    <li class="nav-item"><a class="nav-link" href="budget.html">Budget</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Citizen Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-primary ms-3">Login</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Contact Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">For inquiries, please reach out to us using the details below:</p>
+
+        <div class="card p-4 mb-4">
+            <h5><strong>Ministry of Finance, Government of India</strong></h5>
+            <p>North Block, New Delhi - 110001, India</p>
+            <p>Email: <a href="mailto:info@financeministry.gov.in">info@financeministry.gov.in</a></p>
+            <p>Phone: <a href="tel:+91112345678">+91-11-12345678</a></p>
+        </div>
+
+        <!-- Department-Wise Contact -->
+        <h3 class="mt-4">Department-Wise Contact Information</h3>
+        <table class="table table-bordered mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Department of Economic Affairs</td><td>dea@gov.in</td><td>+91-11-23092547</td></tr>
+                <tr><td>Department of Revenue</td><td>dor@gov.in</td><td>+91-11-23092663</td></tr>
+                <tr><td>Department of Expenditure</td><td>doe@gov.in</td><td>+91-11-23093278</td></tr>
+                <tr><td>Department of Financial Services</td><td>dfs@gov.in</td><td>+91-11-23095555</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Inquiry Form -->
+        <h3 class="mt-4">Send Us a Message</h3>
+        <form action="submit_contact.php" method="post" class="mb-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Google Map -->
+        <h3 class="mt-4">Our Location</h3>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://maps.google.com/maps?q=Ministry+of+Finance+India&output=embed"></iframe>
+        </div>
+
+        <!-- Social Media Links -->
+        <h3 class="mt-4">Follow Us</h3>
+        <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="btn btn-outline-danger"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <p>&copy; 2024 Ministry of Finance, Government of India. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ✅ Section Introduction */
+.finance-insights {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ddd; /* Light gray divider */
+}
+
+.finance-insights h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+.finance-insights p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ✅ Fun Finance Facts Section */
+.fun-facts {
+    background: linear-gradient(135deg, #f9f8f8, #4696ec);
+    color: #0b0000;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.fun-facts h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fact h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.fact p {
+    font-size: 1.1em;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo & links */
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 0.5rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .login-btn {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 100%);
+    padding: 8rem 0 5rem;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-outline {
+    background: none;
+    border: 2px solid #ccc;
+    color: #666;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+    background: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    height: 64px;
+    width: 64px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* Integrations Section */
+.integrations {
+    padding: 5rem 0;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.integrations h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.integration-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.integration-logos img {
+    height: 48px;
+}
+
+/* Footer */
+/* Footer Sections */
+.footer {
+    background: #003ea2; /* Dark blue background */
+    color: rgb(254, 251, 251);
+    padding: 3rem 0;
+    width: 100%; /* Ensures full-width */
+    position: relative;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    background: #003ea2; /* Same background as footer */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #52a3ee;
+}
+
+/* Ensure background color extends to edges */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer ul li a:hover {
+    color: #2563eb;
+}
+
+
+/* Dark Mode Button Styling */
+.dark-mode-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .dark-mode-btn {
+    color: #fff;
+}
+
+/* Dark Mode General Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar in Dark Mode */
+.dark-mode .nav {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .nav-links a {
+    color: #cccccc;
+}
+
+.dark-mode .login-btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Hero Section in Dark Mode */
+.dark-mode .hero {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Fun Facts Section */
+.dark-mode .fun-facts {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Fact Boxes */
+.dark-mode .fact {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+/* Footer */
+.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+
+.dark-mode .footer-bottom {
+    background-color: #111;
+    color: #bbb;
+}
+
+/* Dark Mode Button Animation */
+.dark-mode-btn {
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    transform: scale(1.1);
+}
+

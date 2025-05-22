@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Finance Login</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <section>
+            <div class="elements">
+                <div class="set">
+                    <!-- Replace with finance icons (dollar, chart, etc.) -->
+                    <div><img src="images/rupees.png" alt="Dollar Icon"></div>
+                    <div><img src="images/rupees.png" alt="Chart Icon"></div>
+                
+                    <!-- Repeat pattern -->
+                    <div><img src="images/rupees.png" alt="Dollar Icon"></div>
+                    <div><img src="images/rupees.png" alt="Chart Icon"></div>
+                    <div><img src="images/rupees.png" alt="Chart Icon"></div>
+                </div>
+            </div>
+            <img src="images/interface-3614766_1280.png" class="bg" alt="City Skyline"> 
+            <div class="login">
+                <h2>Financial Portal</h2>
+                <div class="inputBox">
+                    <input type="text" id="accountNumber" placeholder="Account Number" required>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="pin" placeholder="PIN" required>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Access Account" id="btn">
+                </div>
+                <div class="group">
+                    <a href="#">Secure Login Help</a>
+                    <a href="#">Open Account</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Adding an event listener to the "Access Account" button
+            document.getElementById('btn').addEventListener('click', function(event) {
+                // Prevent form submission (no form element)
+                event.preventDefault();
+
+                // Here, you can validate if needed (for example, check if the inputs are filled)
+                var accountNumber = document.getElementById('accountNumber').value;
+                var pin = document.getElementById('pin').value;
+
+                if(accountNumber && pin) {
+                    // If both fields are filled, redirect to the second page
+                    window.location.href = "index2.html"; // Replace with the actual URL of the second page
+                } else {
+                    // Optionally, you can show an alert if fields are missing
+                    alert("Please enter both account number and PIN.");
+                }
+            });
+        </script>
+    </body>
+    </html>
